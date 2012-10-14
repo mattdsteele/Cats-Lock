@@ -6,7 +6,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     jasmine: {
-      src : ['lib/**/*.js','src/**/*.js'],
+      src : ['lib/**/*.js','specs/lib/jasmine-jquery.js', 'src/**/*.js'],
       specs : 'specs/**/*spec.js',
       timeout : 10000,
       junit : {
