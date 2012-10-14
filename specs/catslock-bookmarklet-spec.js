@@ -3,7 +3,12 @@ describe("Cats Lock Bookmarklet", function() {
     expect(typeof(jQuery.fn.catsLock)).toEqual('function');
   });
 
-  xit("runs on an image");
+  it("runs on an image", function() {
+    var data = '<img src="http://example.com/image.jpg" />';
+    $(data).catsLock();
+
+    expect($(data).attr('src')).toMatch(/$http:\/\/placekitten.com/);
+  });
 
   xit("runs on all images below selected element");
 
