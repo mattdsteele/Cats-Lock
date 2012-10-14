@@ -20,8 +20,34 @@ describe("Cats Lock Bookmarklet", function() {
     });
   });
 
-  xit("can show placedog");
-  xit("has placesheen");
+  it("can show placedog", function() {
+    var $data = $('<img src="http://example.com/image.jpg" />');
+    $data.catsLock({
+      source: 'placedog'
+    });
+
+    expect($data.attr('src')).toMatch(/placedog/);
+  });
+
+  it("has placesheen", function() {
+    var $data = $('<img src="http://example.com/image.jpg" />');
+    $data.catsLock({
+      source: 'placesheen'
+    });
+
+    expect($data.attr('src')).toMatch(/placesheen.com/);
+  });
+
+  it("sets the right width & height", function() {
+    var $data = $('<img src="http://example.com/image.jpg" />');
+    var data = $data.get(0);
+    data.width = 200;
+    data.height = 300;
+
+    $data.catsLock();
+    expect($data.attr('src')).toMatch(/200\/300/);
+
+  });
 
   xit("can use other placeholder formats");
 });
