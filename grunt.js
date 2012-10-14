@@ -10,7 +10,7 @@ module.exports = function(grunt) {
       specs : 'specs/**/*spec.js',
       timeout : 10000,
       junit : {
-        output : 'junit/'
+        output : 'target/junit/'
       }
     },
     watch: {
