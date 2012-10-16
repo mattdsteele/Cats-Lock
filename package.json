@@ -1,0 +1,11 @@
+{
+  "name" : "jquery-catslock",
+  "version" : "1.0.0",
+  "scripts" : {
+    "test": "grunt travis --verbose"
+  },
+  "devDependencies" : {
+    "grunt" : "~0.3",
+    "grunt-jasmine-runner" : "~0.5"
+  }
+}
