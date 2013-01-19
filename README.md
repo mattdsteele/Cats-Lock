@@ -23,6 +23,7 @@ You can also specify a `source` option and pass in the following parameters:
 
 * `cats` : Shows cats!
 * `dogs` : Shows dogs!
+* `cage` : Nicholas Cage!
 * `winning` : Shows Charlie Sheen!
 
 
