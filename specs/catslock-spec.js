@@ -33,6 +33,11 @@ describe("Cats lock jQuery plugin", function() {
     expect($pic[0].src).toMatch(/placesheen.com/);
   });
 
+  it('THE BEES MY EYES', function() {
+    $pic.catslock({ source: 'cage' });
+    expect($pic[0].src).toMatch(/placecage.com/);
+  });
+
   it("has a sane default", function() {
     $pic.catslock({ source: 'ojug' });
     expect($pic[0].src).toMatch(/placekitten.com/);

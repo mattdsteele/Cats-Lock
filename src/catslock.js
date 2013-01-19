@@ -8,6 +8,7 @@
     var mappings = {
       'cats' : 'http://placekitten.com',
       'dogs' : 'http://placedog.com',
+      'cage' : 'http://placecage.com/c',
       'winning' : 'http://placesheen.com'
     };
     options = $.extend({}, defaults, options);
